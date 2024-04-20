@@ -6,7 +6,7 @@ Multi-Tenant Data Isolation Middleware for ASP.NET Core
 This library provides a middleware component for ASP.NET Core applications needing to support multi-tenancy and data isolation. The middleware enables developers to build multi-tenant applications where each tenant has its own isolated data storage, such as databases, tables, or schemas. It abstracts away the complexities of tenant management, data isolation, and access control, allowing developers to focus on building core application features.
 
 **Features**:
-1. **Tenant Resolution**: Implement mechanisms for resolving tenants based on request headers, hostnames, subdomains, or custom identifiers. Support both single-tenant and multi-tenant applications.
+1. **Tenant Resolution**: Implements mechanisms for resolving tenants based on request headers, hostnames, subdomains, or custom identifiers. Supports both single-tenant and multi-tenant applications.
 2. **Data Isolation**: Provides strategies for isolating tenant data at the database level, such as using separate databases, schemas, or tables for each tenant. Ensures that tenants cannot access or modify data belonging to other tenants.
 3. **Dynamic Database Connection Management**: Dynamically establish database connections for each tenant based on configured connection strings or database mappings. Handles database connection pooling, caching, and disposal efficiently.
 4. **Tenant-Specific Configuration**: Allows developers to define and manage tenant-specific configuration settings, such as feature toggles, permissions, and customization options.
